@@ -1,65 +1,59 @@
+import { Grid, Typography } from '@material-ui/core'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <div>
+            <Head>
+                <title>
+                    ビンゴを活用したオンライン調査のゲーミフィケーション
+                </title>
+            </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <main>
+                <Typography align="center" style={{ marginTop: '3rem' }}>
+                    2020年度　卒業論文
+                </Typography>
+                <Typography
+                    variant="h3"
+                    align="center"
+                    style={{
+                        lineHeight: '5rem',
+                        marginTop: '7rem',
+                        fontWeight: 'bold',
+                    }}
+                >
+                    ビンゴを活用した
+                    <br />
+                    オンライン調査のゲーミフィケーション
+                </Typography>
+                <Typography
+                    variant="h5"
+                    align="center"
+                    color="textSecondary"
+                    style={{
+                        marginTop: '2rem',
+                        fontWeight: '500',
+                    }}
+                >
+                    Gamification of Online Surveys with BINGO
+                </Typography>
+                <Typography
+                    align="center"
+                    style={{ lineHeight: '2rem', marginTop: '7rem' }}
+                >
+                    九州大学 芸術工学部
+                    <br />
+                    芸術情報設計学科
+                </Typography>
+                <Typography
+                    variant="h4"
+                    align="center"
+                    style={{ marginTop: '2rem', marginBottom: '5rem' }}
+                >
+                    1DS17416M　桑村直弥
+                </Typography>
+            </main>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    )
 }
