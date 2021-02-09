@@ -1,13 +1,41 @@
-import Layout from '../components/layout'
+import { Typography, Paper } from '@material-ui/core'
 import Head from 'next/head'
+import { H4, Title, H5, Red, MyCard } from '../components/text'
 
 export default function Purpose() {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>目的</title>
             </Head>
-            <div>目的</div>
-        </Layout>
+            <main>
+                <Title>目的</Title>
+                <MyCard>
+                    <H4>先行研究の以下3つの問題点を解決すること</H4>
+                </MyCard>
+                <MyCard sub>
+                    <H4>1. 作成の労力</H4>
+                    <H5>
+                        ・ ゲーミフィケーションを適用したオンライン調査の
+                        <Red>作成の労力が非常に大きい</Red>。
+                    </H5>
+                </MyCard>
+                <MyCard sub>
+                    <H4>2. 回答値への影響</H4>
+                    <H5>
+                        ・ ゲーム要素によって
+                        <Red>回答内容に影響が出る</Red>
+                        場合がある。
+                    </H5>
+                </MyCard>
+                <MyCard sub>
+                    <H4>3. ランキング</H4>
+                    <H5>
+                        ・ ランキングがオンライン調査において
+                        <Red>有効であるかが示されていない</Red>。
+                    </H5>
+                </MyCard>
+            </main>
+        </>
     )
 }
