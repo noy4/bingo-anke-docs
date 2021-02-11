@@ -23,8 +23,8 @@ export default function Purpose() {
                 <MyCard sub>
                     <H4>2. 回答値への影響</H4>
                     <H5>
-                        ・ ゲーム要素によって
-                        <Red>回答内容に影響が出る</Red>
+                        ・ ゲーム要素が
+                        <Red>回答値の質を下げる</Red>
                         場合がある。
                     </H5>
                 </MyCard>

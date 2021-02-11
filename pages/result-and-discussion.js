@@ -82,7 +82,7 @@ export default function BingoAnke() {
                     <Grid item xs>
                         <MyCard>
                             <H4>2. 回答値への影響</H4>
-                            <H5>・ 影響は見られなかった。</H5>
+                            <H5>・ 回答値の質は下がらなかった。</H5>
                         </MyCard>
                         <MyCard>
                             <H4>3. ランキングの有効性</H4>

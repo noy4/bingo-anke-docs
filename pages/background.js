@@ -39,7 +39,7 @@ export default function Background() {
                         <Red>作成の労力が非常に大きい</Red>。
                     </H5>
                     <H5>
-                        ・ ゲーム要素によって<Red>回答内容に影響が出る</Red>
+                        ・ ゲーム要素によって<Red>回答内容の質に影響が出る</Red>
                         場合がある。
                     </H5>
                 </MyCard>

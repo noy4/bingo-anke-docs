@@ -1,7 +1,7 @@
 import { CssBaseline, Fab } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
-import { useRouter } from 'next/router'
+import { useState } from 'react'
 import { drawerWidth } from '../const/common'
 import MyDrawer from './myDrawer'
 import Slide from './slide'
@@ -26,12 +26,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Layout({ children }) {
     const classes = useStyles()
-    const router = useRouter()
+    const [open, setOpen] = useState(false)
 
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <MyDrawer />
+            <MyDrawer open={open} close={() => setOpen(false)} />
             <Fab className={classes.fab} onClick={() => setOpen(true)}>
                 <MenuIcon />
             </Fab>

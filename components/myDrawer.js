@@ -1,19 +1,17 @@
 import {
     Box,
-    Divider,
+    Container,
     Drawer,
     Hidden,
     List,
     ListItem,
     ListItemText,
     Typography,
-    Container,
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
 import { drawerWidth, listItems } from '../const/common'
 
 const useStyles = makeStyles((theme) => ({
@@ -28,10 +26,9 @@ const useStyles = makeStyles((theme) => ({
     },
 }))
 
-export default function MyDrawer() {
+export default function MyDrawer({ open, close }) {
     const classes = useStyles()
     const router = useRouter()
-    const [open, setOpen] = useState(false)
 
     const DrawerHeader = () => (
         <Link href="/">
@@ -138,7 +135,7 @@ export default function MyDrawer() {
                     className={classes.drawer}
                     variant="temporary"
                     open={open}
-                    onClose={() => setOpen(false)}
+                    onClose={close}
                     classes={{
                         paper: classes.drawerPaper,
                     }}
